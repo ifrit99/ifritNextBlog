@@ -32,11 +32,59 @@ const Layout = (props) => {
             </footer>
 
             <style jsx>{`
-                (ここに CSS を記述します)
+                .page {
+                    padding: 2em 1em;
+                    max-width: 800px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                header {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 0 4em;
+                }
+
+                .site-title a {
+                    color: inherit;
+                    text-decoration: none;
+                }
+
+                footer {
+                    margin-top: 4em;
+                    padding-top: 2em;
+                    padding-bottom: 2em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
             `}</style>
 
             <style jsx global>{`
-                (ここに CSS を記述します)
+                html,
+                body {
+                    padding: 0;
+                    margin: 0;
+                    font-family: 'Noto Sans JP', -apple-system, "Sagoe UI", "Helvetica Neue",
+                        "Hiragino Kaku Gothic ProN", メイリオ, meiryo, sans-serif;
+                    color: #222;
+                }
+
+                img,
+                iframe {
+                    max-width: 100%;
+                }
+
+                h1, h2, h3, h4, h5, h6 {
+                    font-family: Montserrat, -apple-system, "Sagoe UI", "Helvetica Neue",
+                        "Hiragino Kaku Gothic ProN", メイリオ, meiryo, sans-serif;
+                }
+
+                * {
+                    box-sizing: border-box;
+                }
+            }
             `}</style>
         </div>
     )
