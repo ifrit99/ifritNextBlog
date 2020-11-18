@@ -24,6 +24,7 @@ class MyDocument extends Document {
                     }
                     {
                         GA_TRACKING_ID && <script
+                            dangerouslySetInnerHTML={{
                             __html: `
                                 window.dataLayer = window.dataLayer || [];
                                 function gtag() {
@@ -35,6 +36,7 @@ class MyDocument extends Document {
                                     page_path: window.location.pathname,
                                 });
                             `,
+                            }}
                         />
                     }
                 </Head>
